@@ -1,0 +1,13 @@
+@import "./../../scss/variables";
+@import "./../../scss/mixins";
+
+.container {
+  @include d-flex-center;
+
+  font-size: 2rem;
+  width: 200px;
+  border: border(5px);
+  text-align: center;
+  height: 200px;
+  border-radius: 50%;
+}

@@ -1,0 +1,87 @@
+.headerWrapper{
+    background-color:#23384f;
+    padding:15px 0;
+    color: #fff;
+    position: relative;
+    .logoWrapper{
+      margin: 0;
+      font-size: 35px;
+      @media (max-width:767px){
+        font-size: 26px;
+      }
+      a{
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+          color: #ddd;
+        }
+      }
+    }
+    .loginWrapper{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @media (max-width:767px){
+        display: none;
+        padding:20px;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.9);
+        transition: all 0.3s ease-in-out;
+      }
+      a{
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        margin-right:20px;
+        font-weight: 500;
+      }
+    }
+    .loginWrapper.on{
+      display: flex;
+      justify-content: center;
+      > div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        a{
+          margin:0 0 10px;
+        }
+      }
+    }
+  }
+  .navbarWrapper{
+    background:#2d2d2d;
+    padding: 10px 0;
+    a{
+      display: inline-block;
+      color: #fff;
+      font-size: 15px;
+      text-decoration: none;
+      margin-right: 25px;
+      font-weight: 500;
+      &:last-child{
+        margin-right:0;
+      }
+      &:hover{
+        color: #d1675b;
+      }
+    }
+  }
+  .menuWrapper{
+    display: none;
+    @media (max-width:767px){
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    button{
+      background: transparent;
+      border:0;
+      padding: 0;
+      img{
+        height:32px;
+      }
+    }
+  }
